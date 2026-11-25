@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Surabhi Mishra | Portfolio</title>
+  <meta name="description" content="Personal portfolio of Surabhi Mishra">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <nav class="nav container">
+      <a href="#home" class="logo">Surabhi<span>.</span></a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button id="themeToggle" class="icon-btn" aria-label="Toggle theme">🌙</button>
+        <button id="menuBtn" class="icon-btn menu-btn" aria-label="Open menu" aria-expanded="false">☰</button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="container hero-inner">
+        <p class="eyebrow">Hello, I’m</p>
+        <h1>Surabhi Mishra</h1>
+        <h2>I’m a <span id="typing"></span><span class="cursor">|</span></h2>
+        <p class="lead">I build clean, responsive websites with HTML, CSS, and JavaScript.</p>
+        <div class="hero-btns">
+          <a href="#projects" class="btn">View My Work</a>
+          <a href="#contact" class="btn btn-outline">Contact Me</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container">
+        <h2 class="title">About Me</h2>
+        <div class="about-grid">
+          <div class="avatar" aria-hidden="true">SM</div>
+          <div>
+            <p>Hi! I’m Surabhi, a B.Tech Computer Science student specializing in Cloud Computing and Artificial Intelligence. I enjoy turning ideas into working websites and I’m learning how web development connects with cloud and AI technologies. I’m always looking to build, learn and grow.</p>
+            <ul class="facts">
+              <li><strong>Name:</strong> Surabhi Mishra</li>
+              <li><strong>Location:</strong> Lucknow, India</li>
+              <li><strong>Email:</strong> surabhimishra2005@gmail.com</li>
+              <li><strong>Course:</strong> B.Tech CSE (Cloud Computing &amp; AI)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="education" class="section alt">
+      <div class="container">
+        <h2 class="title">Education</h2>
+        <div class="timeline">
+          <article class="t-item">
+            <span class="year">Currently Pursuing</span>
+            <h3>B.Tech in Computer Science &amp; Engineering</h3>
+            <p>Shri Ramswaroop Memorial University. Specialization in Cloud Computing and Artificial Intelligence.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section">
+      <div class="container">
+        <h2 class="title">Skills</h2>
+        <div class="skills">
+          <div class="skill"><div class="skill-top"><span>HTML5</span><span>90%</span></div><div class="bar"><div class="fill" data-level="90"></div></div></div>
+          <div class="skill"><div class="skill-top"><span>CSS3 &amp; Responsive Design</span><span>85%</span></div><div class="bar"><div class="fill" data-level="85"></div></div></div>
+          <div class="skill"><div class="skill-top"><span>JavaScript</span><span>75%</span></div><div class="bar"><div class="fill" data-level="75"></div></div></div>
+          <div class="skill"><div class="skill-top"><span>Python</span><span>70%</span></div><div class="bar"><div class="fill" data-level="70"></div></div></div>
+          <div class="skill"><div class="skill-top"><span>Java</span><span>65%</span></div><div class="bar"><div class="fill" data-level="65"></div></div></div>
+          <div class="skill"><div class="skill-top"><span>Git &amp; GitHub</span><span>70%</span></div><div class="bar"><div class="fill" data-level="70"></div></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section alt">
+      <div class="container">
+        <h2 class="title">Projects</h2>
+        <div class="cards">
+          <article class="card">
+            <div class="thumb">💼</div>
+            <h3>Personal Portfolio Website</h3>
+            <p>This responsive portfolio, built with semantic HTML, CSS Flexbox/Grid, and JavaScript. Includes a dark mode, mobile menu, animated skill bars, and form validation.</p>
+            <div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+            <a href="https://github.com/surabhimishra1310/portfolio" target="_blank" rel="noopener" class="link">View on GitHub →</a>
+          </article>
+          <article class="card">
+            <div class="thumb">🚀</div>
+            <h3>More Projects Coming Soon</h3>
+            <p>I’m currently learning and building. New projects in web development, Python, Java, and cloud will be added here.</p>
+            <div class="tags"><span>Python</span><span>Java</span><span>Cloud</span></div>
+            <a href="https://github.com/surabhimishra1310" target="_blank" rel="noopener" class="link">Visit my GitHub →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container narrow">
+        <h2 class="title">Contact</h2>
+        <form id="contactForm" novalidate>
+          <label for="name">Name</label>
+          <input id="name" type="text" placeholder="Your name">
+          <small class="error" id="nameErr"></small>
+
+          <label for="email">Email</label>
+          <input id="email" type="email" placeholder="surabhimishra2005@gmail.com">
+          <small class="error" id="emailErr"></small>
+
+          <label for="message">Message</label>
+          <textarea id="message" rows="5" placeholder="Write your message..."></textarea>
+          <small class="error" id="msgErr"></small>
+
+          <button type="submit" class="btn">Send Message</button>
+          <p id="formStatus" class="status" role="status"></p>
+        </form>
+        <p class="social">
+          <a href="https://github.com/surabhimishra1310" target="_blank" rel="noopener">GitHub</a> ·
+          <a href="https://www.linkedin.com/in/surabhi-mishra-29b6a5343" target="_blank" rel="noopener">LinkedIn</a> ·
+          <a href="mailto:surabhimishra2005@gmail.com">Email</a>
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Surabhi Mishra. All rights reserved.</p>
+  </footer>
+
+  <button id="toTop" class="to-top" aria-label="Back to top">↑</button>
+  <script src="script.js"></script>
+</body>
+</html>
